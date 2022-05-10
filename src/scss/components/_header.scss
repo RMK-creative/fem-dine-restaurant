@@ -1,0 +1,8 @@
+@use "../abstracts" as *;
+
+header {
+  background-image: url("../../assets/homepage/hero-bg-mobile.jpg");
+  background-repeat: no-repeat;
+
+  background-color: $primaryColor-codGray;
+}
