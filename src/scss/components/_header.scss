@@ -1,8 +1,50 @@
 @use "../abstracts" as *;
 
-header {
+.header {
   background-image: url("../../assets/homepage/hero-bg-mobile.jpg");
   background-repeat: no-repeat;
-
+  background-position: top center;
   background-color: $primaryColor-codGray;
+
+  color: $color-white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14rem 1rem 6rem;
+
+  &__logo {
+    width: 5.125rem;
+    margin-bottom: 2rem;
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: $frontWeight-light;
+    padding: 0 2rem;
+    width: 16ch;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    letter-spacing: 1.5px;
+
+    @include screen-medium {
+      font-size: 3rem;
+    }
+  }
+
+  &__copy {
+    font-size: 0.9375rem;
+    font-weight: $frontWeight-light;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    max-width: 40ch;
+    margin-bottom: 2rem;
+
+    @include screen-medium {
+      max-width: 46ch;
+      font-size: 1.125rem;
+    }
+  }
 }
