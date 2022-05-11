@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/logo.svg";
+import Button from "./Button";
 
 function Header() {
   return (
@@ -11,6 +12,7 @@ function Header() {
         Experience our seasonal menu in beautiful country surroundings. Eat the
         freshest produce from the comfort of our farmhouse.
       </p>
+      <Button btnLinkTo="/" btnTxt="book a table" btnClass="btn btn__book" />
     </section>
   );
 }
