@@ -5,46 +5,72 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-color: $primaryColor-codGray;
-
   color: $color-white;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 14rem 1rem;
+  position: relative;
+  text-align: center;
 
-  padding: 14rem 1rem 6rem;
+  @include screen-large {
+    background-image: url("../../assets/homepage/hero-bg-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    flex-direction: row;
+    justify-content: left;
+    padding-left: 8rem;
+    text-align: left;
+  }
 
   &__logo {
-    width: 5.125rem;
     margin-bottom: 2rem;
+    width: 5.125rem;
+
+    @include screen-large {
+      position: absolute;
+      top: 3rem;
+      left: 8rem;
+    }
   }
 
   &__title {
     font-size: 2rem;
     font-weight: $frontWeight-light;
-    padding: 0 2rem;
-    width: 16ch;
-    margin-bottom: 1.5rem;
-    text-align: center;
     letter-spacing: 1.5px;
+    margin-bottom: 1.5rem;
+    padding: 0 2rem;
+    max-width: 16ch;
 
     @include screen-medium {
       font-size: 3rem;
     }
+
+    @include screen-large {
+      font-size: 4rem;
+      max-width: 15ch;
+      padding: 0;
+    }
   }
 
-  &__copy {
+  &__subtitle {
     font-size: 0.9375rem;
     font-weight: $frontWeight-light;
-    text-align: center;
     letter-spacing: 1px;
     line-height: 1.5;
     max-width: 34ch;
-    margin-bottom: 2rem;
+    margin-bottom: 3.5rem;
 
     @include screen-medium {
-      max-width: 46ch;
       font-size: 1.125rem;
+      max-width: 46ch;
+    }
+    @include screen-large {
+      font-size: 1.125rem;
+      max-width: 37ch;
     }
   }
+
+  // &__text-wrap{}
 }
