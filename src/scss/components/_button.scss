@@ -1,5 +1,11 @@
 @use "../abstracts" as *;
 
 .btn {
-  color: white;
+  color: $color-white;
+  font-size: 0.875rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 1px solid $color-white;
+  padding: 1.5rem 3.5rem;
 }
